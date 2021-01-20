@@ -11,7 +11,13 @@ const getWidth = () => `${inputWidth.value}px`;
 
 const getHeight = () => `${inputHeight.value}px`;
 
-const getBgColor = () => inputBgColor.value;
+const getBgColor = () => {
+  if(/^[0-9]+$/.test(inputBgColor.value)){
+    return `#${inputBgColor.value}`
+  }
+  return inputBgColor.value
+}
+
 
 const getMainContent = () => `<p>${mainContent.value}</p>`;
 
