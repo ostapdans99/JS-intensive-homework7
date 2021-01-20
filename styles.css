@@ -1,0 +1,146 @@
+html {
+  font-size: 7px;
+}
+
+:root {
+  --text-color: #fff;
+  --main-color: #fda085;
+  --trash-button-color: #ff6f47;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+}
+
+form {
+  padding: 2rem;
+}
+
+form,
+.main-properties,
+.content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-properties,
+.content {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--main-color);
+}
+
+label {
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+}
+
+input {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 2.4rem;
+  border: none;
+}
+
+.add-new-content {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 2.4rem;
+  border: none;
+  box-shadow: none;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+input[type="submit"],
+.add-new-content {
+  align-self: center;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  box-shadow: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover,
+.add-new-content:hover {
+  color: var(--main-color);
+  background-color: var(--text-color);
+}
+
+.container-new-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container-new-content input {
+  margin-right: 33px;
+}
+
+.container-new-content button {
+  color: var(--text-color);
+  background-color: var(--trash-button-color);
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.container-new-content button:hover {
+  color: var(--trash-button-color);
+  background-color: var(--text-color);
+}
+
+.delete-new-content {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.created-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 3rem;
+
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+
+.new-div {
+  overflow: hidden;
+}
+
+
+.error-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000
+}
