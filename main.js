@@ -11,7 +11,7 @@ const getWidth = () => `${inputWidth.value}px`;
 
 const getHeight = () => `${inputHeight.value}px`;
 
-const getBgColor = () => `#${inputBgColor.value}`;
+const getBgColor = () => inputBgColor.value;
 
 const getMainContent = () => `<p>${mainContent.value}</p>`;
 
@@ -24,6 +24,7 @@ const errorDiv = () => {
   div.style.backgroundColor = '#fff';
   div.innerText = 'Ошибка'
   container.appendChild(div);
+
 }
 
 
